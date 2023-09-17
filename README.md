@@ -63,7 +63,7 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 ```bash
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
-# Add the repository to Apt sources:
+Add the repository to Apt sources:
 ```bash
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
