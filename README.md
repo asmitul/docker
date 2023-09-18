@@ -112,7 +112,7 @@ docker run \
   --privileged \
   --network app_name_network \
   --env ENVIRONMENT=dev \
-  -- volume localpath:dockerpath \
-  -- publish outsideport:dockerinsideport \
+  --volume localpath:dockerpath \
+  --publish outsideport:dockerinsideport \
   image_name
 ```
